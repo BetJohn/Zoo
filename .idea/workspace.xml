@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="977d3ef9-e18a-41bf-82b5-6427d9e48ea0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Amphibian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bird.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Fish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Invertebrate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mamal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reptile.java" afterDir="false" />
+    <list default="true" id="977d3ef9-e18a-41bf-82b5-6427d9e48ea0" name="Changes" comment="Added basic animal classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -67,11 +60,23 @@
       <option name="presentableId" value="Default" />
       <updated>1679158322583</updated>
       <workItem from="1679158323859" duration="908000" />
-      <workItem from="1679259729270" duration="2134000" />
+      <workItem from="1679259729270" duration="2287000" />
     </task>
+    <task id="LOCAL-00001" summary="Added basic animal classes">
+      <created>1679261932826</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679261932826</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added basic animal classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added basic animal classes" />
   </component>
 </project>
