@@ -16,6 +16,16 @@ public class Bird  extends  Animal{
         return chirps;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "Bird{" +
+                "maxAltitude=" + maxAltitude +
+                ", chirps=" + chirps +
+                ", fly=" + fly +
+                ", wingsColor='" + wingsColor + '\'' +
+                '}';
+    }
+
     public void setChirps(boolean chirps) {
         this.chirps = chirps;
     }
@@ -36,15 +46,8 @@ public class Bird  extends  Animal{
         this.wingsColor = wingsColor;
     }
 
-    public Bird(String name, int age, String breed, int maxAltitude, boolean chirps, boolean fly, String wingsColor) {
-        super(name, age, breed);
-        this.maxAltitude = maxAltitude;
-        this.chirps = chirps;
-        this.fly = fly;
-        this.wingsColor = wingsColor;
-    }
-
-    public Bird(int maxAltitude, boolean chirps, boolean fly, String wingsColor) {
+    public Bird(String name, int age, String breed, boolean needFoodOrWater, int healthCareValability, int maxAltitude, boolean chirps, boolean fly, String wingsColor) {
+        super(name, age, breed, needFoodOrWater, healthCareValability);
         this.maxAltitude = maxAltitude;
         this.chirps = chirps;
         this.fly = fly;

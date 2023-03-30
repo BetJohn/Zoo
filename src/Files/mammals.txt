@@ -1,0 +1,20 @@
+Max,3,German Shepherd,true,5,true,7,Carnivore,true
+Luna,5,Bengal cat,true,3,true,5,Carnivore,true
+Charlie,2,Golden Retriever,true,4,true,8,Omnivore,true
+Buddy,4,Beagle,true,6,false,4,Omnivore,true
+Daisy,1,Siamese cat,true,2,true,4,Carnivore,true
+Oliver,6,Poodle,true,7,false,6,Omnivore,true
+Rocky,2,Pug,true,4,true,5,Omnivore,true
+Stella,3,Chihuahua,true,5,true,6,Carnivore,true
+Bailey,7,Labrador Retriever,true,8,true,7,Omnivore,true
+Molly,2,Dachshund,true,3,true,5,Carnivore,true
+Leo,5,Rottweiler,true,6,true,7,Carnivore,true
+Milo,1,Shih Tzu,true,2,true,4,Omnivore,true
+Lucy,8,Bulldog,true,9,true,6,Omnivore,true
+Sadie,4,Doberman Pinscher,true,5,true,8,Carnivore,true
+Maximus,1,American Pit Bull Terrier,true,3,true,5,Carnivore,true
+Ziggy,6,Boxer,true,7,true,6,Omnivore,true
+Rosie,2,Yorkshire Terrier,true,4,true,4,Carnivore,true
+Cooper,3,Siberian Husky,true,5,true,7,Carnivore,true
+Mia,5,Boston Terrier,true,6,true,5,Omnivore,true
+Jack,4,Great Dane,true,8,true,7,Omnivore,true

@@ -1,0 +1,20 @@
+Salamandra, 5, Fire Salamander, true, 8, Rough, Black, true
+Broască, 2, European tree frog, true, 7, Smooth, Green, true
+Triton, 1, Great Crested Newt, false, 5, Smooth, Brown, true
+Salamandra, 3, Yellow-spotted Salamander, true, 6, Rough, Yellow, false
+Broască, 4, Poison Dart Frog, true, 9, Smooth, Blue, true
+Triton, 6, Palmate Newt, true, 7, Rough, Brown, true
+Salamandra, 2, Alpine Salamander, false, 4, Smooth, Orange, false
+Broască, 1, Red-eyed Tree Frog, true, 6, Rough, Green, true
+Triton, 4, Smooth Newt, true, 5, Rough, Brown, true
+Salamandra, 6, Fire Salamander, true, 9, Rough, Black, true
+Broască, 3, Northern Leopard Frog, true, 8, Smooth, Green, true
+Triton, 2, Smooth Newt, true, 6, Smooth, Brown, false
+Salamandra, 4, Spotted Salamander, true, 7, Rough, Yellow, false
+Broască, 5, American Bullfrog, true, 9, Rough, Green, true
+Triton, 3, Palmate Newt, true, 5, Rough, Brown, true
+Salamandra, 7, Alpine Salamander, true, 8, Smooth, Orange, false
+Broască, 4, Green Tree Frog, true, 6, Rough, Green, true
+Triton, 5, Smooth Newt, true, 7, Smooth, Brown, true
+Salamandra, 2, Black Salamander, true, 6, Rough, Black, false
+Broască, 6, White's Tree Frog, true, 8, Rough, Green, true

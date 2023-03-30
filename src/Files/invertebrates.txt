@@ -1,0 +1,20 @@
+Mantis Shrimp,2,Marine,true,7,true,Carnivore
+Honeybee,3,Insect,false,5,true,Herbivore
+Jellyfish,1,Marine,true,2,false,Carnivore
+Spider,1,Arachnid,false,3,true,Carnivore
+Butterfly,2,Insect,false,4,true,Herbivore
+Caterpillar,1,Insect,false,1,false,Herbivore
+Octopus,3,Marine,true,6,false,Carnivore
+Snail,4,Gastropod,false,4,false,Herbivore
+Squid,2,Marine,true,5,true,Carnivore
+Crab,2,Arthropod,true,4,false,Carnivore
+Scorpion,1,Arachnid,false,3,false,Carnivore
+Worm,1,Annelid,false,1,false,Detritivore
+Leech,1,Annelid,true,2,false,Hematophagous
+Centipede,1,Myriapod,false,3,true,Carnivore
+Beetle,2,Insect,false,4,false,Herbivore
+Mosquito,1,Insect,false,2,true,Hematophagous
+Ant,1,Insect,false,1,true,Herbivore
+Lobster,3,Arthropod,true,6,false,Carnivore
+Shrimp,2,Arthropod,true,4,false,Carnivore
+Fly,1,Insect,false,1,true,Detritivore

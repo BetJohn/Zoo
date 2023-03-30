@@ -3,17 +3,20 @@ public class Reptile extends Animal{
     private String color;
     private boolean poisonous;
 
-    public Reptile(String name, int age, String breed, boolean swim, String color, boolean poisonous) {
-        super(name, age, breed);
+    public Reptile(String name, int age, String breed, boolean needFoodOrWater, int healthCareValability, boolean swim, String color, boolean poisonous) {
+        super(name, age, breed, needFoodOrWater, healthCareValability);
         this.swim = swim;
         this.color = color;
         this.poisonous = poisonous;
     }
 
-    public Reptile(boolean swim, String color, boolean poisonous) {
-        this.swim = swim;
-        this.color = color;
-        this.poisonous = poisonous;
+    @Override
+    public String toString() {
+        return super.toString() + "Reptile{" +
+                "swim=" + swim +
+                ", color='" + color + '\'' +
+                ", poisonous=" + poisonous +
+                '}';
     }
 
     public boolean isSwim() {

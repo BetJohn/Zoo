@@ -1,0 +1,20 @@
+Lizard, 4, Chameleon, true, 8, true, green, false
+Turtle, 15, Box Turtle, true, 6, true, brown, false
+Snake, 8, Cobra, true, 10, false, black, true
+Crocodile, 20, Nile Crocodile, true, 12, true, green, true
+Iguana, 5, Green Iguana, true, 9, false, green, false
+Gecko, 3, Leopard Gecko, true, 7, false, yellow, false
+Monitor lizard, 10, Komodo Dragon, true, 11, false, gray, false
+Chameleon, 2, Veiled Chameleon, true, 5, false, blue, false
+Boa constrictor, 7, Red-tailed Boa, true, 8, false, brown, false
+Rattlesnake, 6, Western Diamondback Rattlesnake, true, 9, false, brown, true
+Alligator, 12, American Alligator, true, 10, true, brown, false
+Gila monster, 4, Gila Monster, true, 6, false, orange, false
+Horned lizard, 2, Desert Horned Lizard, true, 4, false, beige, false
+Python, 9, Ball Python, true, 8, false, brown, false
+Chelonia, 25, Leatherback Sea Turtle, true, 15, true, black, false
+Garter snake, 3, Common Garter Snake, true, 5, false, green, false
+Caiman, 8, Spectacled Caiman, true, 11, true, brown, false
+Bearded dragon, 6, Pogona, true, 8, false, brown, false
+Skink, 2, Blue-tongued Skink, true, 4, false, blue, false
+Anole, 1, Green Anole, true, 3, false, green, false

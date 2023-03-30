@@ -4,19 +4,22 @@ public class Fish extends Animal{
     private String waterType;
     private int maxDepth;
 
-    public Fish(String name, int age, String breed, boolean predator, int length, String waterType, int maxDepth) {
-        super(name, age, breed);
+    public Fish(String name, int age, String breed, boolean needFoodOrWater, int healthCareValability, boolean predator, int length, String waterType, int maxDepth) {
+        super(name, age, breed, needFoodOrWater, healthCareValability);
         this.predator = predator;
         this.length = length;
         this.waterType = waterType;
         this.maxDepth = maxDepth;
     }
 
-    public Fish(boolean predator, int length, String waterType, int maxDepth) {
-        this.predator = predator;
-        this.length = length;
-        this.waterType = waterType;
-        this.maxDepth = maxDepth;
+    @Override
+    public String toString() {
+        return super.toString() + "Fish{" +
+                "predator=" + predator +
+                ", length=" + length +
+                ", waterType='" + waterType + '\'' +
+                ", maxDepth=" + maxDepth +
+                '}';
     }
 
     public boolean isPredator() {

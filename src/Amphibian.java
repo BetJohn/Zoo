@@ -14,30 +14,23 @@ public class Amphibian extends Animal{
         return skinColor;
     }
 
-    public Amphibian(String name, int age, String breed, String skinType, String skinColor, boolean jump) {
-        super(name, age, breed);
+    public Amphibian(String name, int age, String breed, boolean needFoodOrWater, int healthCareValability, String skinType, String skinColor) {
+        super(name, age, breed, needFoodOrWater, healthCareValability);
         this.skinType = skinType;
         this.skinColor = skinColor;
-        this.jump = jump;
     }
 
-    public Amphibian(String skinType, String skinColor, boolean jump) {
-        this.skinType = skinType;
-        this.skinColor = skinColor;
-        this.jump = jump;
-    }
 
     public void setSkinColor(String skinColor) {
         this.skinColor = skinColor;
     }
 
-    public boolean canJump() {
-        return jump;
-    }
 
-    public void setJump(boolean jump) {
-        this.jump = jump;
+    @Override
+    public String toString() {
+        return super.toString() + "Amphibian{" +
+                "skinType='" + skinType + '\'' +
+                ", skinColor='" + skinColor + '\'' +
+                '}';
     }
-
-    private boolean jump;
 }

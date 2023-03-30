@@ -1,0 +1,20 @@
+Nemo,1,clownfish,true,4,false,10,saltwater,100
+Dory,2,blue tang,true,3,true,20,saltwater,200
+Bob,3,guppy,false,2,false,4,freshwater,50
+Goldie,1,goldfish,false,1,false,6,freshwater,60
+Larry,4,barracuda,true,5,true,60,saltwater,500
+Sally,2,swordfish,true,4,true,120,saltwater,800
+Sam,1,betta,false,2,false,3,freshwater,30
+Jerry,3,catfish,false,3,false,18,freshwater,150
+Max,5,shark,true,5,true,300,saltwater,1500
+Fred,2,anglerfish,true,4,true,24,deepsea,2000
+Alex,1,clam,false,1,false,1,saltwater,20
+Garry,1,crab,false,2,false,2,saltwater,30
+Lenny,3,lobster,true,3,false,20,saltwater,400
+Steve,4,octopus,true,4,false,10,saltwater,300
+Willy,2,shrimp,false,2,false,2,saltwater,50
+Tom,1,starfish,false,1,false,1,saltwater,10
+Oscar,3,tuna,true,4,true,100,saltwater,700
+Frank,4,eel,true,4,false,24,freshwater,200
+Benny,2,salmon,true,3,false,36,freshwater,300
+Penny,1,tilapia,false,1,false,6,freshwater,70
