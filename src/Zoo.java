@@ -8,7 +8,6 @@ public class Zoo {
 
     private Zoo() {
     }
-
     public static Zoo getInstance() {
         if (instance == null) {
             instance = new Zoo();

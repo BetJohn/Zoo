@@ -15,24 +15,37 @@ public class Menu {
     }
     public void showMenu() {
         showOptions();
+        boolean shwonMenu = true;
         Scanner scanner = new Scanner(System.in);
-        int choice = scanner.nextInt();
-        switch (choice){
-            case 1:
-                zooService.visitorMenu();
-                break;
-            case 2:
-                zooService.employeeMenu();
-                break;
-            case 3:
-                zooService.investorMenu();
-                break;
-            case 4:
-                exit(0);
-                break;
-            default:
-                System.out.println("Invalid option!");
-                break;
+        int choice = 2;
+        while (choice < 4 || choice > 1) {
+            if(shwonMenu == true)
+                shwonMenu = false;
+            else
+                showOptions();
+            choice = scanner.nextInt();
+            switch (choice){
+                case 1:
+                    zooService.visitorMenu();
+                    break;
+                case 2:
+                    zooService.employeeMenu();
+                    break;
+                case 3:
+                    zooService.investorMenu();
+                    break;
+                case 4:
+                    exit(0);
+                    break;
+                default:
+                    System.out.println("Invalid option!");
+                    break;
+            }
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

@@ -6,12 +6,14 @@ import java.util.Scanner;
 
 public class ZooService {
     Zoo zoo = Zoo.getInstance();
+    AuditService auditService = new AuditService("C:\\Users\\Ioan\\Desktop\\Facultate Semestru2\\ProgramareAvansataObiecte\\Zoo_Project\\Zoo\\src\\Files\\audit.csv");
     public void seeFedAnimals() {
         for (Animal animal : zoo.getAnimals()) {
             if (!animal.isNeedFoodOrWater()) {
                 System.out.println("Animal " + animal.getName() + " is fed");
             }
         }
+        auditService.writeActionToCsv("seeFedAnimals");
     }
     public boolean isAnimalFed(String name) {
         for (Animal animal : zoo.getAnimals()) {
@@ -21,6 +23,7 @@ public class ZooService {
                 }
             }
         }
+        auditService.writeActionToCsv("isAnimalFed");
         return false;
     }
     public void checkAnimalHealth() {
@@ -34,6 +37,7 @@ public class ZooService {
         if (!needCare) {
             System.out.println("All animals are healthy");
         }
+        auditService.writeActionToCsv("checkAnimalHealth");
     }
     public boolean allAnimalsAreHealthy() {
         for (Animal animal : zoo.getAnimals()) {
@@ -70,6 +74,7 @@ public class ZooService {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        auditService.writeActionToCsv("populateZooWithMammals");
     }
     public void populateZooWithAmphibians(String path){
         try {
@@ -94,6 +99,7 @@ public class ZooService {
         catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        auditService.writeActionToCsv("populateZooWithAmphibians");
     }
     public void populateWithBirds(String path){
         try {
@@ -119,6 +125,7 @@ public class ZooService {
         catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        auditService.writeActionToCsv("populateWithBirds");
     }
     public void populateWithReptiles(String path){
         try {
@@ -143,6 +150,7 @@ public class ZooService {
         catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        auditService.writeActionToCsv("populateWithReptiles");
     }
     public void wait(int miliseconds) {
         try {
@@ -150,7 +158,7 @@ public class ZooService {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
+        auditService.writeActionToCsv("wait");
     }
     public void populateWithInvertebrates(String path){
         try {
@@ -173,6 +181,7 @@ public class ZooService {
         }catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        auditService.writeActionToCsv("populateWithInvertebrates");
     }
     public void populateWithFish(String path){
         try {
@@ -197,13 +206,16 @@ public class ZooService {
         }catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        auditService.writeActionToCsv("populateWithFish");
     }
     public void visitorMenu(){
+        auditService.writeActionToCsv("visitorMenu");
         System.out.println("Welcome to the visitor menu");
         System.out.println("What would you like to see today?");
         animalsMenu();
     }
     public void animalsMenu(){
+        auditService.writeActionToCsv("animalsMenu");
         System.out.println("1. See all animals");
         System.out.println("2. See all animals of a specific type");
         System.out.println("3. See all carnivores");
@@ -211,7 +223,10 @@ public class ZooService {
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
         switch (choice) {
-            case 1 -> zoo.showAnimals();
+            case 1 -> {
+                zoo.showAnimals();
+                auditService.writeActionToCsv("showAnimals");
+            }
             case 2 -> {
                 System.out.println("Choose animal type");
                 System.out.println("1. Mammal");
@@ -223,26 +238,53 @@ public class ZooService {
                 int animalTypeChoice = scanner.nextInt();
                 showAnimalsTypeByChoice(animalTypeChoice);
             }
-            case 3 -> zoo.showCarnivoreAnimals();
+            case 3 -> {
+                zoo.showCarnivoreAnimals();
+                auditService.writeActionToCsv("showCarnivoreAnimals");
+            }
 
-            case 4 -> zoo.showHerbivoreAnimals();
+            case 4 -> {
+                zoo.showHerbivoreAnimals();
+                auditService.writeActionToCsv("showHerbivoreAnimals");
+            }
 
             default -> System.out.println("Invalid choice");
         }
+
     }
     public void showAnimalsTypeByChoice(int animalTypeChoice){
         switch (animalTypeChoice) {
-            case 1 -> zoo.showMamals();
-            case 2 -> zoo.showAmphibians();
-            case 3 -> zoo.showBirds();
-            case 4 -> zoo.showReptiles();
-            case 5 -> zoo.showInvertebrates();
-            case 6 -> zoo.showFish();
+            case 1 -> {
+                zoo.showMamals();
+                auditService.writeActionToCsv("showMamals");
+            }
+            case 2 -> {
+                zoo.showAmphibians();
+                auditService.writeActionToCsv("showAmphibians");
+            }
+            case 3 -> {
+                zoo.showBirds();
+                auditService.writeActionToCsv("showBirds");
+            }
+            case 4 -> {
+                zoo.showReptiles();
+                auditService.writeActionToCsv("showReptiles");
+            }
+            case 5 -> {
+                zoo.showInvertebrates();
+                auditService.writeActionToCsv("showInvertebrates");
+            }
+            case 6 -> {
+                zoo.showFish();
+                auditService.writeActionToCsv("showFish");
+            }
             default -> System.out.println("Invalid choice");
         }
+        auditService.writeActionToCsv("showAnimalsTypeByChoice");
 
     }
     public void employeeMenu(){
+        auditService.writeActionToCsv("employeeMenu");
         System.out.println("Welcome to the employee menu");
         System.out.println("1. Login");
         System.out.println("0. Exit");
@@ -272,8 +314,10 @@ public class ZooService {
                 wait(1500);
             }
         }
+
     }
     public void investorMenu(){
+        auditService.writeActionToCsv("investorMenu");
         System.out.println("Welcome to the investor menu");
         System.out.println("1. Login");
         System.out.println("0. Exit");
@@ -303,6 +347,7 @@ public class ZooService {
                 wait(1500);
             }
         }
+
     }
     public List<Investor>getAllInvestors(){
         //return a list of all investors from the list of humans
@@ -312,6 +357,7 @@ public class ZooService {
                 investors.add((Investor) human);
             }
         }
+        auditService.writeActionToCsv("getAllInvestors");
         return investors;
     }
     public List<Employee> getAllEmployees(){
@@ -322,6 +368,7 @@ public class ZooService {
                 employees.add((Employee) human);
             }
         }
+        auditService.writeActionToCsv("getAllEmployees");
         return employees;
     }
 }
