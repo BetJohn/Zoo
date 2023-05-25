@@ -1,11 +1,10 @@
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class ZooService {
     Zoo zoo = Zoo.getInstance();
+    DbFunction dbFunction = new DbFunction();
     AuditService auditService = new AuditService("C:\\Users\\Ioan\\Desktop\\Facultate Semestru2\\ProgramareAvansataObiecte\\Zoo_Project\\Zoo\\src\\Files\\audit.csv");
     public void seeFedAnimals() {
         for (Animal animal : zoo.getAnimals()) {
@@ -68,8 +67,9 @@ public class ZooService {
                 Mammal mammal = new Mammal(name, age, breed, needFoodOrWater, healthCareValability,
                         communicateBySounds, intelligence, feedingType, hair);
                 zoo.addAnimal(mammal);
+                dbFunction.insertMammal(name, age, breed, needFoodOrWater, healthCareValability,
+                        communicateBySounds, intelligence, feedingType, hair);
             }
-
             scanner.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -93,6 +93,7 @@ public class ZooService {
 
                 Amphibian amphibian = new Amphibian(name, age, breed, needFoodOrWater, healthCareValability, skinType, skinColor);
                 zoo.addAnimal(amphibian);
+                dbFunction.insertAmphibian(name, age, breed, needFoodOrWater, healthCareValability, skinType, skinColor);
             }
             scanner.close();
         }
@@ -119,6 +120,7 @@ public class ZooService {
                 String wingsColor = values[7];
                 Bird bird = new Bird(name, age, breed, needFoodOrWater, healthCareValability, maxAltitude, chirps, canFly, wingsColor);
                 zoo.addAnimal(bird);
+                dbFunction.insertBird(name, age, breed, needFoodOrWater, healthCareValability, chirps,maxAltitude, canFly, wingsColor);
             }
             scanner.close();
         }
@@ -144,6 +146,7 @@ public class ZooService {
                 boolean isPoisonous = Boolean.parseBoolean(values[7]);
                 Reptile reptile = new Reptile(name, age, breed, needFoodOrWater, healthCareValability, canSwim, color, isPoisonous);
                 zoo.addAnimal(reptile);
+                dbFunction.insertReptile(name, age, breed, needFoodOrWater, healthCareValability, canSwim, color, isPoisonous);
             }
             scanner.close();
         }
@@ -176,6 +179,7 @@ public class ZooService {
                 String foodType = values[6];
                 Invertebrate invertebrate = new Invertebrate(name, age, breed, needFoodOrWater, healthCareValability, canFly, foodType);
                 zoo.addAnimal(invertebrate);
+                dbFunction.insertInvertebrate(name, age, breed, needFoodOrWater, healthCareValability, canFly, foodType);
             }
             scanner.close();
         }catch (FileNotFoundException e) {
@@ -201,6 +205,7 @@ public class ZooService {
                 int maxDepth = Integer.parseInt(values[8]);
                 Fish fish = new Fish(name, age, breed, needFoodOrWater, healthCareValability, predator, length, waterType, maxDepth);
                 zoo.addAnimal(fish);
+                dbFunction.insertFish(name, age, breed, needFoodOrWater, healthCareValability, predator, length, waterType, maxDepth);
             }
             scanner.close();
         }catch (FileNotFoundException e) {
@@ -370,5 +375,75 @@ public class ZooService {
         }
         auditService.writeActionToCsv("getAllEmployees");
         return employees;
+    }
+    public void creatFriendship(Animal animal1, Animal animal2){
+        Map<Animal, Animal> relationships = new Map<Animal, Animal>() {
+            @Override
+            public int size() {
+                return 0;
+            }
+
+            @Override
+            public boolean isEmpty() {
+                return false;
+            }
+
+            @Override
+            public boolean containsKey(Object key) {
+                return false;
+            }
+
+            @Override
+            public boolean containsValue(Object value) {
+                return false;
+            }
+
+            @Override
+            public Animal get(Object key) {
+                return null;
+            }
+
+            @Override
+            public Animal put(Animal key, Animal value) {
+                return null;
+            }
+
+            @Override
+            public Animal remove(Object key) {
+                return null;
+            }
+
+            @Override
+            public void putAll(Map<? extends Animal, ? extends Animal> m) {
+
+            }
+
+            @Override
+            public void clear() {
+
+            }
+
+            @Override
+            public Set<Animal> keySet() {
+                return null;
+            }
+
+            @Override
+            public Collection<Animal> values() {
+                return null;
+            }
+
+            @Override
+            public Set<Entry<Animal, Animal>> entrySet() {
+                return null;
+            }
+        };
+        relationships.put(animal1, animal2);
+        BestFriend bestFriend = new BestFriend(relationships);
+    }
+    public void showFriendship(BestFriend bestFriend, Animal animal){
+        auditService.writeActionToCsv("showFriendships");
+        System.out.println("Friendships: ");
+        System.out.println(bestFriend.relationship.get(animal));
     }
 }

@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="977d3ef9-e18a-41bf-82b5-6427d9e48ea0" name="Changes" comment="Finish project">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_221.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AuditService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DbFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BestFriend.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zoo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Zoo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Investor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Investor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zoo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ZooService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ZooService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +123,9 @@
       <workItem from="1683270855186" duration="3550000" />
       <workItem from="1683285501680" duration="6977000" />
       <workItem from="1683462057121" duration="3244000" />
-      <workItem from="1683606060658" duration="4111000" />
+      <workItem from="1683606060658" duration="4788000" />
+      <workItem from="1684505822635" duration="2258000" />
+      <workItem from="1685024252777" duration="785000" />
     </task>
     <task id="LOCAL-00001" summary="Added basic animal classes">
       <created>1679261932826</created>
@@ -154,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680169318863</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finish project">
+      <created>1683610436193</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683610436193</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

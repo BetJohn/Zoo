@@ -5,6 +5,8 @@ public class Investor extends Human{
     private String investmentType;
     private double investmentAmount;
 
+
+
     public Investor(String name, int age, String securityNumber, String address, String phoneNumber, String investorID, String investmentType, double investmentAmount) {
         super(name, age, securityNumber, address, phoneNumber);
         this.investorID = investorID;
